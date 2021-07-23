@@ -38,6 +38,7 @@ item.infernium_stick.name=Infernium stick
 item.infernium_core.name=Infernium core
 item.platine_mechanism.name=Platine mechanism
 item.nitronium_ingot.name=Nitronium ingot
+item.paradium_ingot.name=Paradium ingot
 
 tile.infernium_block.name=Infernium block
 tile.cave_block.name=Cave block
@@ -48,3 +49,4 @@ tile.platine_ores.name=Platine ore
 tile.platine_ingot.name=Platine ingot
 tile.nitronium.name=Nitronium
 tile.angelic.name=Angelic
+tile.platine_block.name=Platine block

@@ -45,9 +45,9 @@ public class WorldGenInfernium implements IWorldGenerator
     private void GenerateEnd(World world, int i, int j, Random random)
     {
         addOre(BlockMod.platine_ore, Blocks.stone, random, world, i, j, 0, 11, 1, 8, 8);
-        addOre(BlockMod.angelic_ore, Blocks.stone, random, world, i, j, 0, 8, 1, 3, 2);
+        addOre(BlockMod.angelic_ore, Blocks.stone, random, world, i, j, 0, 8, 1, 4, 3);
         addOre(BlockMod.nitronium_ore, Blocks.stone, random, world, i, j, 0, 60, 4, 10, 11);
-        addOre(BlockMod.infernium_ore, Blocks.stone, random, world, i, j, 0, 11, 1, 6, 2);
+        addOre(BlockMod.infernium_ore, Blocks.stone, random, world, i, j, 0, 11, 1, 5, 4);
     }
 
     private void GenerateOverWorld(World world, int i, int j, Random random)

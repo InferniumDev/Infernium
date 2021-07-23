@@ -2,6 +2,7 @@ package fr.infernium.com.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.infernium.com.Reference;
+import fr.infernium.com.init.Items.ItemUnclaim;
 import fr.infernium.com.init.armorset.ItemInferArmor;
 import fr.infernium.com.init.armorset.ItemNitroniumArmor;
 import fr.infernium.com.init.armorset.ItemParaArmor;
@@ -27,8 +28,9 @@ public class ItemMod
     public static ToolMaterial specialtool = EnumHelper.addToolMaterial("specialtool", 3, 2000, 8.0f, 6.0f, 0);
     public static ToolMaterial paradiumtool = EnumHelper.addToolMaterial("paradiumtool", 4, 3000, 20.0f, 8.0f, 25);
     public static ToolMaterial platinetool = EnumHelper.addToolMaterial("platinetool", 3, 3000, 10.0f, 6.0f, 10);
-    public static ToolMaterial inferniumtool = EnumHelper.addToolMaterial("infernium", 4, 2000, 15.0f, 8.0f, 12);
+    public static ToolMaterial inferniumtool = EnumHelper.addToolMaterial("infernium", 4, 2000, 15.0f, 6.0f, 12);
     
+    public static Item unclaim_finder;
     public static Item platine_stick, platine_mechanism;
     public static Item infernium_stick, infernium_core, compressed_infernium;
     public static Item killsword;
@@ -133,6 +135,8 @@ public class ItemMod
         GameRegistry.registerItem(platine_ingot, "platine_ingot");
         GameRegistry.registerItem(infernium_ingot, "infernium ingot"); 
         //Recipe
+
+   	    GameRegistry.addRecipe(new ItemStack(BlockMod.platine_block, 1), new Object[] {"XXX", "XXX", "XXX", 'X' , ItemMod.platine_ingot});
         GameRegistry.addRecipe(new ItemStack(BlockMod.infernium_block, 1), new Object[] {"XXX", "XXX", "XXX", 'X', ItemMod.infernium_ingot});
         GameRegistry.addSmelting(BlockMod.platine_ore, new ItemStack(ItemMod.platine_ingot, 1), 5);
         GameRegistry.addSmelting(BlockMod.nitronium_ore, new ItemStack(ItemMod.nitronium_ingot, 1), 6);
